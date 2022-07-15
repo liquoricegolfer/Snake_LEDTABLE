@@ -5,6 +5,9 @@ import os
 import time
 import board
 import neopixel
+import RPi.GPIO as GPIO
+GPIO.setup(15,GPIO.OUT)
+GPIO.output(15,GPIO.HIGH)
 
 size=200
 
@@ -12,7 +15,7 @@ led_pin = board.D18
 num_pixels = 200
 ORDER = neopixel.GRB
 leds = neopixel.NeoPixel(
-    led_pin, num_leds, brightness=0.2, auto_write=False, pixel_order=ORDER
+    led_pin, num_leds, brightness=0.2#, auto_write=False, pixel_order=ORDER
 )
 
 global field
