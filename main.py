@@ -2,11 +2,11 @@ import keyboard
 import threading
 import random
 import os
-size = 200
 import time
 import board
 import neopixel
 
+size=200
 
 led_pin = board.D18
 num_pixels = 200
@@ -135,16 +135,3 @@ if __name__ == '__main__':
         for pos in position:
 
             field[pos]=1
-
-
-
-
-
-
-
-
-
-
-
-
-
